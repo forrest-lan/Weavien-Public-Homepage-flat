@@ -1,15 +1,19 @@
 # Weavien Public Homepage
 
 This repository contains the public Weavien landing page, user guides, and the GitHub Pages deployment workflow. **It does not contain the Weavien application source code.** The full application source is maintained separately in a private repository.
+## Weavien v0.7.0 Preview 2
 
-## Publish the homepage
+Weavien 是一款面向 Markdown 写作与知识整理的 Windows 桌面应用。
 
-1. Create a public GitHub repository for this package and upload the contents of this folder to its `main` branch.
-2. In **Settings → Pages**, choose **GitHub Actions** as the deployment source.
-3. Check the **Actions** tab for the `Publish Weavien homepage` workflow.
+### 本版本
 
-The workflow publishes only `website/`; it generates repository, documentation, and Releases links from the public homepage repository. To publish a Windows download, attach the ZIP to a release in this public repository.
+- Windows x64 便携版，解压后运行 `Weavien.exe`
+- 使用 pywebview 宿主桥接，不启动本地 HTTP 服务
+- 支持工作空间文件夹树与常用文件管理
+- 支持配置本地 AI 模型；模型文件不包含在此下载包中
 
-The WeChat and Alipay images are clearly marked non-payment placeholders. Replace them and verify both codes before enabling real support.
+### 使用说明
 
-The included `LICENSE` is a restrictive preview evaluation license, not an open-source license.
+下载 ZIP 并解压到本地文件夹，然后运行 `Weavien.exe`。首次使用本地 AI 功能时，请在应用中配置模型文件。
+
+这是预览版本，欢迎反馈使用问题。
